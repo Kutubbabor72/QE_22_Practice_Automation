@@ -9,21 +9,23 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class AmazonHomePage {
+public class AmazonHW1 {
+
     static WebDriver driver;
-    String browserName ="chrome";
-    String url="https://www.amazon.com/";
+    String browserName = "chrome";
+    String url = "https://www.amazon.com/";
 
     @BeforeTest
-    public void setUpAutomation(){
+    public void setUpAutomation() {
         System.out.println("+++++++Automation Started +++++++++++++");
     }
+
     @AfterTest
-    public void tearDownAutomation(){
+    public void tearDownAutomation() {
         System.out.println("+++++++++++Automation Ended++++++++++++");
     }
 
-@BeforeTest
+    @BeforeTest
     public void setup() {
 
         setUpFireFoxBrowser();
@@ -62,7 +64,7 @@ public class AmazonHomePage {
 
     @Test
     public static void testSearchBoxOnChrome() throws InterruptedException {
-       // setup("chrome", "\"https://www.amazon.com/\"");
+        // setup("chrome", "\"https://www.amazon.com/\"");
 
         // enter keyword in search box field
         driver.findElement(By.xpath("//*[@id=\"twotabsearchtextbox\"]")).sendKeys("iPhone 14");
@@ -84,9 +86,10 @@ public class AmazonHomePage {
         Thread.sleep(10000);
         driver.close();
     }
-@Test(enabled = false)
+
+    @Test(enabled = false)
     public static void testSearchBoxOnFireFox() throws InterruptedException {
-      //  setup("firefox", "\"https://www.amazon.com/\"");
+        //  setup("firefox", "\"https://www.amazon.com/\"");
 
         // enter keyword in search box field
         driver.findElement(By.xpath("//*[@id=\"twotabsearchtextbox\"]")).sendKeys("iPhone 14");
@@ -111,6 +114,7 @@ public class AmazonHomePage {
 
     /**
      * This method will test signIn with Valid Credentials
+     *
      * @throws InterruptedException
      */
     @Test
@@ -129,18 +133,20 @@ public class AmazonHomePage {
         // Verify Successful log in
         String expectedText = "Hello, Kutub";
         String actualText = driver.findElement(By.xpath("//*[@id=\"nav-link-accountList-nav-line-1\"]")).getText();
-        System.out.println("Actual Text "+actualText);
-        Assert.assertEquals(actualText,expectedText,"SignIn Success full");
+        System.out.println("Actual Text " + actualText);
+        Assert.assertEquals(actualText, expectedText, "SignIn Success full");
 
-    Thread.sleep(5000);
-    driver.close();
+        Thread.sleep(5000);
+        driver.close();
 
     }
 
     /**
      * This method will test signIn with inValid Credentials
+     *
      * @throws InterruptedException
      */
+    @Test
     public static void testSignInInvalidCredentials() throws InterruptedException {
 
         // Click on Hello SignIN
@@ -156,12 +162,83 @@ public class AmazonHomePage {
         // Verify Successful log in
         String expectedText = "There was a problem";
         String actualText = driver.findElement(By.xpath("//*[@id=\"auth-error-message-box\"]/div/h4")).getText();
-        System.out.println("Actual Text "+actualText);
-        Assert.assertEquals(actualText,expectedText,"SignIn Success full and Error message not showing ");
+        System.out.println("Actual Text " + actualText);
+        Assert.assertEquals(actualText, expectedText, "SignIn Success full and Error message not showing ");
 
         Thread.sleep(5000);
         driver.close();
 
     }
 
+    @Test
+    public static void amazonLogoIsClickAble() throws InterruptedException {
+        // click on amazon logo
+        driver.findElement(By.id("nav-logo-sprites")).click();
+        Thread.sleep(5000);
+        driver.close();
+    }
+
+    @Test
+    public static void amazonLogoWorksAsHomePageButton() throws InterruptedException {
+        // navigate to buy again page
+        driver.findElement(By.id("nav_cs_buy_again")).click();
+
+        // verify that by clicking amazon logo will navigate to amazon homge page
+        driver.findElement(By.xpath("//*[@id=\"nav-logo-sprites\"]")).click();
+        Thread.sleep(5000);
+        driver.close();
+    }
+
+    @Test
+    public static void BeautyAndPersonalCareIsClickAble() throws InterruptedException {
+
+        // Navigate to Beauty and personal Care page by make a click from amazon home page
+        driver.findElement(By.id("nav_cs_1")).click();
+
+        Thread.sleep(5000);
+        driver.close();
+
+    }
+
+    @Test
+    public static void BeautyAndPersonalCareNavigate() throws InterruptedException {
+
+        // Navigate to Beauty and personal Care page
+        driver.findElement(By.id("nav_cs_1")).click();
+
+        // Navigate to hair care in Beauty and personal care department
+
+        driver.findElement(By.className("a-color-base a-link-normal")).click();
+
+        Thread.sleep(5000);
+        driver.close();
+
+
+    }
+
+    @Test
+    public static void HealthAndHouseHoldIsClickable() throws InterruptedException {
+
+        // Navigate to Health and HouseHold Page by make a click from amazon home page
+
+        driver.findElement(By.id("nav_cs_4")).click();
+        Thread.sleep(5000);
+        driver.close();
+
+    }
+
+   @Test
+    public static void HealthAndHouseHoldNavigate() throws InterruptedException {
+
+        // Navigate to Health and HouseHold Page by make a click from amazon home page
+
+        driver.findElement(By.id("nav_cs_4")).click();
+
+        // Navigate to HouseHold cleaning
+
+        driver.findElement(By.xpath("//*[@id=\"a-page\"]/div[2]/div[2]/div[2]/div[2]/div/div[1]/ul[1]/li[3]/a")).click();
+
+        Thread.sleep(5000);
+        driver.close();
+    }
 }

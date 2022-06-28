@@ -7,7 +7,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module-library" exported="">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="jar://$MODULE_DIR$/ExternalLibrary/Selenium/selenium-java-4.2.2/selenium-api-4.2.2.jar!/" />
@@ -49,7 +49,7 @@
         </SOURCES>
       </library>
     </orderEntry>
-    <orderEntry type="module-library" exported="">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="jar://$MODULE_DIR$/ExternalLibrary/Selenium/selenium-java-4.2.2/lib/async-http-client-2.12.3.jar!/" />
@@ -58,7 +58,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" exported="">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="jar://$MODULE_DIR$/ExternalLibrary/Selenium/selenium-java-4.2.2/lib/async-http-client-netty-utils-2.12.3.jar!/" />
@@ -67,7 +67,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" exported="">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="jar://$MODULE_DIR$/ExternalLibrary/Selenium/selenium-java-4.2.2/lib/auto-common-1.2.1.jar!/" />
@@ -76,7 +76,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" exported="">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="jar://$MODULE_DIR$/ExternalLibrary/Selenium/selenium-java-4.2.2/lib/auto-service-1.0.1.jar!/" />
@@ -85,7 +85,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" exported="">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="jar://$MODULE_DIR$/ExternalLibrary/Selenium/selenium-java-4.2.2/lib/auto-service-annotations-1.0.1.jar!/" />
@@ -94,7 +94,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" exported="">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="jar://$MODULE_DIR$/ExternalLibrary/Selenium/selenium-java-4.2.2/lib/byte-buddy-1.12.10.jar!/" />
@@ -103,7 +103,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" exported="">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="jar://$MODULE_DIR$/ExternalLibrary/Selenium/selenium-java-4.2.2/lib/checker-qual-3.12.0.jar!/" />
@@ -112,7 +112,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" exported="">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="jar://$MODULE_DIR$/ExternalLibrary/Selenium/selenium-java-4.2.2/lib/commons-exec-1.3.jar!/" />
@@ -121,7 +121,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" exported="">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="jar://$MODULE_DIR$/ExternalLibrary/Selenium/selenium-java-4.2.2/lib/error_prone_annotations-2.11.0.jar!/" />
@@ -130,7 +130,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" exported="">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="jar://$MODULE_DIR$/ExternalLibrary/Selenium/selenium-java-4.2.2/lib/failsafe-3.2.4.jar!/" />
@@ -139,7 +139,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" exported="">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="jar://$MODULE_DIR$/ExternalLibrary/Selenium/selenium-java-4.2.2/lib/failureaccess-1.0.1.jar!/" />
@@ -148,7 +148,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" exported="">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="jar://$MODULE_DIR$/ExternalLibrary/Selenium/selenium-java-4.2.2/lib/guava-31.1-jre.jar!/" />
@@ -157,7 +157,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" exported="">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="jar://$MODULE_DIR$/ExternalLibrary/Selenium/selenium-java-4.2.2/lib/j2objc-annotations-1.3.jar!/" />
@@ -166,7 +166,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" exported="">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="jar://$MODULE_DIR$/ExternalLibrary/Selenium/selenium-java-4.2.2/lib/jakarta.activation-1.2.2.jar!/" />
@@ -175,7 +175,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" exported="">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="jar://$MODULE_DIR$/ExternalLibrary/Selenium/selenium-java-4.2.2/lib/jcommander-1.82.jar!/" />
@@ -184,7 +184,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" exported="">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="jar://$MODULE_DIR$/ExternalLibrary/Selenium/selenium-java-4.2.2/lib/jsr305-3.0.2.jar!/" />
@@ -193,7 +193,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" exported="">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="jar://$MODULE_DIR$/ExternalLibrary/Selenium/selenium-java-4.2.2/lib/jtoml-2.0.0.jar!/" />
@@ -202,7 +202,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" exported="">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="jar://$MODULE_DIR$/ExternalLibrary/Selenium/selenium-java-4.2.2/lib/netty-buffer-4.1.77.Final.jar!/" />
@@ -211,7 +211,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" exported="">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="jar://$MODULE_DIR$/ExternalLibrary/Selenium/selenium-java-4.2.2/lib/netty-codec-4.1.77.Final.jar!/" />
@@ -220,7 +220,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" exported="">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="jar://$MODULE_DIR$/ExternalLibrary/Selenium/selenium-java-4.2.2/lib/netty-codec-http-4.1.77.Final.jar!/" />
@@ -229,7 +229,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" exported="">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="jar://$MODULE_DIR$/ExternalLibrary/Selenium/selenium-java-4.2.2/lib/netty-codec-socks-4.1.77.Final.jar!/" />
@@ -238,7 +238,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" exported="">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="jar://$MODULE_DIR$/ExternalLibrary/Selenium/selenium-java-4.2.2/lib/netty-common-4.1.77.Final.jar!/" />
@@ -247,7 +247,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" exported="">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="jar://$MODULE_DIR$/ExternalLibrary/Selenium/selenium-java-4.2.2/lib/netty-handler-4.1.77.Final.jar!/" />
@@ -256,7 +256,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" exported="">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="jar://$MODULE_DIR$/ExternalLibrary/Selenium/selenium-java-4.2.2/lib/netty-handler-proxy-4.1.77.Final.jar!/" />
@@ -265,7 +265,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" exported="">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="jar://$MODULE_DIR$/ExternalLibrary/Selenium/selenium-java-4.2.2/lib/netty-reactive-streams-2.0.4.jar!/" />
@@ -274,7 +274,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" exported="">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="jar://$MODULE_DIR$/ExternalLibrary/Selenium/selenium-java-4.2.2/lib/netty-resolver-4.1.77.Final.jar!/" />
@@ -283,7 +283,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" exported="">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="jar://$MODULE_DIR$/ExternalLibrary/Selenium/selenium-java-4.2.2/lib/netty-transport-4.1.77.Final.jar!/" />
@@ -292,7 +292,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" exported="">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="jar://$MODULE_DIR$/ExternalLibrary/Selenium/selenium-java-4.2.2/lib/netty-transport-classes-epoll-4.1.77.Final.jar!/" />
@@ -301,7 +301,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" exported="">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="jar://$MODULE_DIR$/ExternalLibrary/Selenium/selenium-java-4.2.2/lib/netty-transport-classes-kqueue-4.1.77.Final.jar!/" />
@@ -310,7 +310,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" exported="">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="jar://$MODULE_DIR$/ExternalLibrary/Selenium/selenium-java-4.2.2/lib/netty-transport-native-unix-common-4.1.77.Final.jar!/" />
@@ -319,7 +319,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" exported="">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="jar://$MODULE_DIR$/ExternalLibrary/Selenium/selenium-java-4.2.2/lib/opentelemetry-api-1.14.0.jar!/" />
@@ -328,7 +328,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" exported="">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="jar://$MODULE_DIR$/ExternalLibrary/Selenium/selenium-java-4.2.2/lib/opentelemetry-context-1.14.0.jar!/" />
@@ -337,7 +337,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" exported="">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="jar://$MODULE_DIR$/ExternalLibrary/Selenium/selenium-java-4.2.2/lib/opentelemetry-exporter-logging-1.14.0.jar!/" />
@@ -346,7 +346,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" exported="">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="jar://$MODULE_DIR$/ExternalLibrary/Selenium/selenium-java-4.2.2/lib/opentelemetry-sdk-1.14.0.jar!/" />
@@ -355,7 +355,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" exported="">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="jar://$MODULE_DIR$/ExternalLibrary/Selenium/selenium-java-4.2.2/lib/opentelemetry-sdk-common-1.14.0.jar!/" />
@@ -364,7 +364,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" exported="">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="jar://$MODULE_DIR$/ExternalLibrary/Selenium/selenium-java-4.2.2/lib/opentelemetry-sdk-extension-autoconfigure-1.14.0-alpha.jar!/" />
@@ -373,7 +373,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" exported="">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="jar://$MODULE_DIR$/ExternalLibrary/Selenium/selenium-java-4.2.2/lib/opentelemetry-sdk-extension-autoconfigure-spi-1.14.0.jar!/" />
@@ -382,7 +382,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" exported="">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="jar://$MODULE_DIR$/ExternalLibrary/Selenium/selenium-java-4.2.2/lib/opentelemetry-sdk-logs-1.14.0-alpha.jar!/" />
@@ -391,7 +391,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" exported="">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="jar://$MODULE_DIR$/ExternalLibrary/Selenium/selenium-java-4.2.2/lib/opentelemetry-sdk-metrics-1.14.0.jar!/" />
@@ -400,7 +400,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" exported="">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="jar://$MODULE_DIR$/ExternalLibrary/Selenium/selenium-java-4.2.2/lib/opentelemetry-sdk-trace-1.14.0.jar!/" />
@@ -409,7 +409,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" exported="">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="jar://$MODULE_DIR$/ExternalLibrary/Selenium/selenium-java-4.2.2/lib/opentelemetry-semconv-1.14.0-alpha.jar!/" />
@@ -418,7 +418,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" exported="">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="jar://$MODULE_DIR$/ExternalLibrary/Selenium/selenium-java-4.2.2/lib/reactive-streams-1.0.3.jar!/" />
@@ -427,10 +427,19 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" exported="">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="jar://$MODULE_DIR$/ExternalLibrary/Selenium/selenium-java-4.2.2/lib/slf4j-api-1.7.36.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/ExternalLibrary/TestNG/testng-7.6.0.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
