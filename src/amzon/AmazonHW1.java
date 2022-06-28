@@ -87,7 +87,7 @@ public class AmazonHW1 {
         driver.close();
     }
 
-    @Test(enabled = false)
+  /*  @Test(enabled = false)
     public static void testSearchBoxOnFireFox() throws InterruptedException {
         //  setup("firefox", "\"https://www.amazon.com/\"");
 
@@ -111,6 +111,8 @@ public class AmazonHW1 {
         Thread.sleep(5000);
         driver.close();
     }
+
+  */
 
     /**
      * This method will test signIn with Valid Credentials
@@ -227,7 +229,7 @@ public class AmazonHW1 {
 
     }
 
-   @Test
+    @Test
     public static void HealthAndHouseHoldNavigate() throws InterruptedException {
 
         // Navigate to Health and HouseHold Page by make a click from amazon home page
@@ -240,5 +242,27 @@ public class AmazonHW1 {
 
         Thread.sleep(5000);
         driver.close();
+    }
+
+    @Test
+    public static void AmazonBasicIsClickAble() throws InterruptedException {
+        // Navigate to Health and HouseHold Page by make a click from amazon home page
+        driver.findElement(By.id("nav_cs_6")).click();
+        Thread.sleep(5000);
+        driver.close();
+
+    }
+
+    @Test
+    public static void ShopperToolKitIsClickAble() throws InterruptedException {
+
+        // setup("chrome", "\"https://www.amazon.com/\"");
+        // Navigate to Shopper Tool Kit Page by make a click from amazon home pag
+
+        driver.findElement(By.xpath("//*[@id=\"nav-xshop\"]/a[4]")).click();
+
+        Thread.sleep(5000);
+        driver.close();
+
     }
 }
