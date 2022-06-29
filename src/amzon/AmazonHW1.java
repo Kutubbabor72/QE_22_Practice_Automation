@@ -22,13 +22,13 @@ public class AmazonHW1 {
 
     @AfterTest
     public void tearDownAutomation() {
+        driver.close();
         System.out.println("+++++++++++Automation Ended++++++++++++");
     }
 
     @BeforeTest
     public void setup() {
 
-        setUpFireFoxBrowser();
 
         if (this.browserName == "chrome") {
             setUpChromeBrowser();
@@ -84,7 +84,7 @@ public class AmazonHW1 {
         }
 
         Thread.sleep(10000);
-        driver.close();
+        // driver.close();
     }
 
   /*  @Test(enabled = false)
@@ -139,7 +139,7 @@ public class AmazonHW1 {
         Assert.assertEquals(actualText, expectedText, "SignIn Success full");
 
         Thread.sleep(5000);
-        driver.close();
+        //driver.close();
 
     }
 
@@ -168,7 +168,7 @@ public class AmazonHW1 {
         Assert.assertEquals(actualText, expectedText, "SignIn Success full and Error message not showing ");
 
         Thread.sleep(5000);
-        driver.close();
+        //driver.close();
 
     }
 
@@ -177,18 +177,17 @@ public class AmazonHW1 {
         // click on amazon logo
         driver.findElement(By.id("nav-logo-sprites")).click();
         Thread.sleep(5000);
-        driver.close();
+        //driver.close();
     }
 
     @Test
     public static void amazonLogoWorksAsHomePageButton() throws InterruptedException {
         // navigate to buy again page
         driver.findElement(By.id("nav_cs_buy_again")).click();
-
         // verify that by clicking amazon logo will navigate to amazon homge page
         driver.findElement(By.xpath("//*[@id=\"nav-logo-sprites\"]")).click();
         Thread.sleep(5000);
-        driver.close();
+        //driver.close();
     }
 
     @Test
@@ -196,9 +195,8 @@ public class AmazonHW1 {
 
         // Navigate to Beauty and personal Care page by make a click from amazon home page
         driver.findElement(By.id("nav_cs_1")).click();
-
         Thread.sleep(5000);
-        driver.close();
+        // driver.close();
 
     }
 
@@ -206,14 +204,27 @@ public class AmazonHW1 {
     public static void BeautyAndPersonalCareNavigate() throws InterruptedException {
 
         // Navigate to Beauty and personal Care page
-        driver.findElement(By.id("nav_cs_1")).click();
-
+        driver.findElement(By.xpath("//*[@id=\"nav-xshop\"]/a[2]")).click();
         // Navigate to hair care in Beauty and personal care department
-
-        driver.findElement(By.className("a-color-base a-link-normal")).click();
-
+        driver.findElement(By.xpath("//*[@id=\"s-refinements\"]/div[1]/ul/li[3]/span/a/span")).click();
         Thread.sleep(5000);
-        driver.close();
+        //driver.close();
+
+
+    }
+
+    @Test
+    public static void CheckHairStylingAccessories() throws InterruptedException {
+        // Navigate to Beauty and personal Care page
+        driver.findElement(By.xpath("//*[@id=\"nav-xshop\"]/a[2]")).click();
+        // Navigate to hair care in Beauty and personal care department
+        driver.findElement(By.xpath("//*[@id=\"s-refinements\"]/div[1]/ul/li[3]/span/a/span")).click();
+        //Check for the product Hair Styling Accessories
+        driver.findElement(By.xpath("//*[@id=\"anonCarousel2\"]/ol/li[1]/div/div/div[1]/div[1]/span")).click();
+        String text = driver.findElement(By.xpath("//*[@id=\"anonCarousel2\"]/ol/li[1]/div/div/div[1]/div[1]/span")).getText();
+        System.out.println("Actual Text" + text);
+        Thread.sleep(5000);
+        //driver.close();
 
 
     }
@@ -222,10 +233,9 @@ public class AmazonHW1 {
     public static void HealthAndHouseHoldIsClickable() throws InterruptedException {
 
         // Navigate to Health and HouseHold Page by make a click from amazon home page
-
         driver.findElement(By.id("nav_cs_4")).click();
         Thread.sleep(5000);
-        driver.close();
+        //driver.close();
 
     }
 
@@ -233,15 +243,11 @@ public class AmazonHW1 {
     public static void HealthAndHouseHoldNavigate() throws InterruptedException {
 
         // Navigate to Health and HouseHold Page by make a click from amazon home page
-
         driver.findElement(By.id("nav_cs_4")).click();
-
         // Navigate to HouseHold cleaning
-
         driver.findElement(By.xpath("//*[@id=\"a-page\"]/div[2]/div[2]/div[2]/div[2]/div/div[1]/ul[1]/li[3]/a")).click();
-
         Thread.sleep(5000);
-        driver.close();
+        // driver.close();
     }
 
     @Test
@@ -249,20 +255,40 @@ public class AmazonHW1 {
         // Navigate to Health and HouseHold Page by make a click from amazon home page
         driver.findElement(By.id("nav_cs_6")).click();
         Thread.sleep(5000);
-        driver.close();
+        //driver.close();
 
     }
 
     @Test
-    public static void ShopperToolKitIsClickAble() throws InterruptedException {
+    public static void ShopperToolKitCheckTodayDeal() throws InterruptedException {
 
         // setup("chrome", "\"https://www.amazon.com/\"");
         // Navigate to Shopper Tool Kit Page by make a click from amazon home pag
-
         driver.findElement(By.xpath("//*[@id=\"nav-xshop\"]/a[4]")).click();
+        driver.findElement(By.className("nav-a-content")).click();
+        String actualText = driver.findElement(By.className("a-size-extra-large a-spacing-micro")).getText();
+        System.out.println("Actual Text " + actualText);
 
-        Thread.sleep(5000);
-        driver.close();
+        Thread.sleep(10000);
+        // driver.close();
+
+    }
+
+    @Test
+    public static void CheckLocationOfUser() {
+        // to check user's name and address in amazon header
+        // setup("chrome", "\"https://www.amazon.com/\"");
+        // Check for Delivered Person
+        driver.findElement(By.id("glow-ingress-line1")).click();
+        // this is to check the name of the person
+        String actualText = driver.findElement(By.id("glow-ingress-line1")).getText();
+        System.out.println("Actual Text " + actualText);
+        // check for user's zipcode
+        // driver.findElement(By.id("glow-ingress-line2")).click();
+        String zipCode = driver.findElement(By.id("glow-ingress-line2")).getText();
+        System.out.println("Zip Code is " + zipCode);
+        // this code will check for pop up window of address
+        driver.findElement(By.id("nav-global-location-popover-link")).click();
 
     }
 }

@@ -11,27 +11,36 @@ public class Walmart {
     String browserName = "chrome";
     String url = "https://www.walmart.com/";
 
-    @BeforeTest
-    public void setup() {
 
+    public static void main(String[] args) {
 
-        //Navigate to walmart.com
-        //driver.get(this.url);
+        String driverPath ="../QE_22_Practice_Automation/ExternalLibrary/BrowserDriver/Windows/chromedriver.exe";
+        System.setProperty("webdriver.chrome.driver",driverPath);
+        WebDriver driver = new ChromeDriver();
         driver.get("https://www.walmart.com/");
-
+        System.out.println("Browser is open");
         driver.manage().window().maximize();
-
     }
-
-    @Test
-    public static void setUpChromeBrowser() {
-        //Driver Location
-        String ChromeDriverPath = "../QE_22_Practice_Automation/ExternalLibrary/BrowserDriver/Windows/chromedriver.exe";
-
-        System.setProperty("webdriver.chrome.driver", ChromeDriverPath);
-
-        //open browser
-        driver = new ChromeDriver();
-    }
+//    public void setup() {
+//
+//
+//        //Navigate to walmart.com
+//        //driver.get(this.url);
+//        driver.get("https://www.walmart.com/");
+//
+//        driver.manage().window().maximize();
+//
+//    }
+//
+//
+//    public static void setUpChromeBrowser() {
+//        //Driver Location
+//        String ChromeDriverPath = "../QE_22_Practice_Automation/ExternalLibrary/BrowserDriver/Windows/chromedriver.exe";
+//
+//        System.setProperty("webdriver.chrome.driver", ChromeDriverPath);
+//
+//        //open browser
+//        driver = new ChromeDriver();
+//    }
 
 }

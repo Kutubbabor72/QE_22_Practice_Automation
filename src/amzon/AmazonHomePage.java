@@ -26,7 +26,7 @@ public class AmazonHomePage {
 @BeforeTest
     public void setup() {
 
-        setUpFireFoxBrowser();
+      //  setUpFireFoxBrowser();
 
         if (this.browserName == "chrome") {
             setUpChromeBrowser();
